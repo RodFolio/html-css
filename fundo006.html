@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<style>
+  <style>
     body {
-        height: 100vh;
-        background-color: black;
-        background-image: url('img/wallpaper002.jpg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      height: 100vh;
+      /* shorthand-attachment */
+      background: black url('img/wallpaper002.jpg') center center no-repeat fixed;
+      background-size: cover;
 
-        /* cover ele ocupa 100% da viewr port */
-        /* background-size: contain; */
-        /* contain faz a imagem ser 100% exibida */
+      /* background-color: black;
+      background-image: url("img/wallpaper002.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; */
+
+      /* background-attachment: fixed; */
+      
+        /* Shorthand -background segue esse padrao
+        color > image > position > repeat > [size]  */
+      /* cover ele ocupa 100% da viewr port */
+      /* background-size: contain; */
+      /* contain faz a imagem ser 100% exibida */
     }
 
     main {
-        background-color: white;
-        width: 400px;
-        padding: 10px;
-        margin: auto;
-        border: 2px solid red;
-        border-radius: 10px;
+      background-color: white;
+      max-width: 400px;
+      padding: 10px;
+      margin: auto;
+      border: 2px solid red;
+      border-radius: 10px;
     }
+  </style>
 
-</style>
-
-<body>
+  <body>
     <main>
-        <h1>Teste de imagem de fundos</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur sunt nam fugiat eligendi odit, quam adipisci corporis amet. Aperiam, non tenetur. Quos vero voluptatum, veritatis ut nulla magni quia ab!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis omnis vero modi voluptate dignissimos dolore eveniet atque fuga, nostrum, totam necessitatibus cum dolorum! Minus, alias excepturi architecto est nihil voluptas.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati facilis doloremque deserunt sint itaque hic modi nostrum. Commodi provident mollitia nesciunt minima eius accusantium et libero, incidunt, aut aliquam voluptate.
-        </p>
+      <h1>Teste de imagem de fundos</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
+        sunt nam fugiat eligendi odit, quam adipisci corporis amet. Aperiam, non
+        tenetur. Quos vero voluptatum, veritatis ut nulla magni quia ab! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Quis omnis vero modi
+        voluptate dignissimos dolore eveniet atque fuga, nostrum, totam
+        necessitatibus cum dolorum! Minus, alias excepturi architecto est nihil
+        voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Obcaecati facilis doloremque deserunt sint itaque hic modi nostrum.
+        Commodi provident mollitia nesciunt minima eius accusantium et libero,
+        incidunt, aut aliquam voluptate.
+      </p>
     </main>
-</body>
+  </body>
 </html>
