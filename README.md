@@ -32,5 +32,3 @@ Este repositório é dedicado ao aprendizado de HTML e CSS. Aqui serão armazena
 - Explorar o uso de Flexbox e Grid.
 - Praticar com desafios e pequenos projetos.
 
-Fique à vontade para contribuir e compartilhar ideias! 🚀
-
