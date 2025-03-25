@@ -8,13 +8,13 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
-    box-sizing: border-box;
 }
 
 /* reset  */
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
     box-sizing: border-box;
 }
 
@@ -27,21 +27,23 @@ body {
 }
 
 header {
+
     background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
     padding-top: 3.4rem;
-    padding-bottom: 3.4rem;
+    padding-bottom: 16rem;
     
 }
 
 header > h1 {
     font-family: var(--fonte2);
     font-variant: small-caps;
-    font-size: 9vw;
+    font-size: 9.5vw;
 }
 
 header > p{
+    font-size: 1.9vw;
     font-family: var(--fonte1);
 }
 
@@ -55,60 +57,75 @@ header p a:hover {
     text-decoration: underline;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
 
 section{
     font-family: var(--fonte3);
-    padding-top: 10vh;
-    padding-left: 5vh;
-    padding-bottom: 10vh;
-    font-size: 3.5vw;
+    padding-top: 10vw;
+    padding-left: 4vh;
+    line-height: 7vw;
+    font-size: 3.7vw;
+    padding-bottom: 10vw;
 }
 
-.normal {
-
+/* .normal {
     padding-bottom: 65px;
+} */
 
-
-
-}
 
 .girasol p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.472);
     color:white;
-    width: 45%;
-    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+    /* width: 46%; */
+    /* text-align: justify; */
 }
 
 .letras p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.472);
     color:white;
-    width: 45%;
-    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+    /* width: 45%;
+    text-align: justify; */
 }
 
 #sol {
-    background-image: url('imagens/background001.jpg');
-    background-position: right center;
-    /* efeito parallax */
-    background-attachment: fixed;
+
+    background: url('imagens/background001.jpg') center center no-repeat fixed;
     background-size: cover;
-    height: 100%;
+    color: white;
+    /* background-image: url('imagens/background001.jpg');
+    background-position: right center; */
+    /* efeito parallax */
+    /* background-attachment: fixed;
+    background-size: cover;
+    height: 100%; */
 
 
 }
 
 .letras {
-    background-image: url('imagens/background002.jpg');
-    background-position: center;
-    background-attachment: fixed;
+    background: url('imagens/background002.jpg') center center no-repeat fixed;
+    background-size: cover;
     color: white;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
+    font-size: 1.5vw;
     font-family: var(--fonte1);
 }
 
