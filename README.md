@@ -1,4 +1,4 @@
-# README - Aprendendo HTML e CSS
+##- Aprendendo HTML e CSS
 
 ## Sobre
 Este repositório é dedicado ao aprendizado de HTML e CSS. Aqui serão armazenados projetos, anotações e exemplos práticos para consolidar o conhecimento sobre desenvolvimento web.
