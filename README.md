@@ -13,15 +13,6 @@ Este repositório é dedicado ao aprendizado de HTML e CSS. Aqui serão armazena
 3. Criar projetos simples para praticar os conceitos aprendidos.
 4. Melhorar a responsividade e acessibilidade das páginas.
 
-## Estrutura do Repositório
-```
-/
-|-- index.html  # Página inicial
-|-- style.css   # Arquivo de estilos
-|-- projetos/   # Projetos práticos
-|-- anotações/ # Resumos e materiais de estudo
-```
-
 ## Recursos Úteis
 - [MDN Web Docs - HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [MDN Web Docs - CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
