@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* para atapdar as palavras que tem acento e virgula no css */
+
+body{
+    background-color: yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+
+}
+
+h1{
+    color: violet;
+    background-color: tomato;
+
+}
+
+p a {
+    text-align: justify;
+    text-decoration: none;
+}

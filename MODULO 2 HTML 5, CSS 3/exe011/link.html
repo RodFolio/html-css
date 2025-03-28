@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+</head>
+
+
+<style>
+
+    /* # = id
+    /* . = class */
+    /* : = pseudo class */
+    /* :: = pseudo element */
+    /* > = children = filho  */
+
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+        color: red;
+        list-style: none;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:visited{
+        color: darkred;
+    }
+    
+
+    /* pseudo class: visited ele mostrar o link que ja foi visitado  */
+
+    a:hover {
+        color: yellow;
+        text-decoration: underline;
+    }
+
+
+    a:active {
+
+        color: blue;
+    }
+    /* pseudo class: active quando o mouse estiver pressionado */
+
+    /* pseudo class sempre uma vez uma vez ":"
+    pseudo element sempre duas vezes ":" */
+
+    a::after{
+        content: counters(contador_secao, ".");
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgray;
+    }
+
+
+</style>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+    </li>
+        <li><a class="top" href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios">Repositório GitHub</a></li>
+
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios">test 1</a></li>
+
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios">test 2</a></li>
+    </ul>
+
+
+
+    </ul>
+
+
+</body>
+</html>

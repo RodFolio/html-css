@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Class</title>
+  </head>
+
+
+  <style>
+
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    p{
+        display: none;
+    }	
+
+    .top:hover p {
+        display: block;
+        background-color: red;
+        color: blue;
+    }
+
+
+
+  </style>
+  <body>
+    <div>
+    <h1 class="top">Ola mundo cruel</h1>
+    texto   
+    </div>
+    <div class="top">
+        passe o mouse no texto
+      <p>texto escondido aqui</p>
+    </div>
+  </body>
+</html>

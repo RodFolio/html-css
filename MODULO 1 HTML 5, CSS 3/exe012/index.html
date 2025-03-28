@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAGENS ADAPTATIVAS</title>
+  </head>
+  <body>
+    <h1>IMAGENS DINÂMICAS</h1>
+    <p>tente abrir esse site em baris dispositivos diferentes</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ipsa
+      dolore nesciunt odio distinctio non quibusdam est in facilis autem fugit
+      libero sapiente soluta dolorem corporis asperiores, placeat id recusandae.
+    </p>
+
+    <picture>
+      <source
+        media="(max-width: 750px )"
+        srcset="img/IMAGEMP.png"
+        type="image/png"
+      />
+
+      <source
+        media="(max-width:1050px )"
+        srcset="img/IMAGEMM.png"
+        type="image/png"
+      />
+      <!--Source:media:type, usando o max-width, e no type colocamos .png,jpg etc... -->
+      <img src="img/IMAGEMG.png" alt="FOTO LOGO" /> </picture
+    ><!--tag <picture> para imagens adaptativas sempre acima colocamos os sources
+        seguindo a ordem de tamanho.-->
+    <h1>REPRODUZINDO AUDIO</h1>
+    <p>Vamos aprender a tocar um audio</p>
+    <audio src="media/musica.mp3" controls></audio
+    ><!--Jeito pratico de colocar audio em site-->
+    <h2>COLOCANDO AUDIO DE OUTRA FORMA</h2>
+    <audio preload="auto" controls>
+      <source src="media/musica.mp3" type="audio/mpeg" alt=/>
+      <source src="media/musica.ogg" type="audio/ogg" />
+      <source src="media/musica.wav" type="audio/wav" />
+    </audio>
+    <!--usando a tag <audio> tiramos o src, e dentro da tag colocamos a tag <source>
+          Obs: na tag <audio> passaos os paramentros de preload, controls, loop-->
+    <p>
+      seu navegador nao suporta audio
+      <a
+        href="https://www.microsoft.com/pt-br/edge/update/134?form=MT00Y4&channel=stable&version=134.0.3124.51&cs=357927189"
+        download="media/musica.mp3"
+        type="audio/mpeg"
+        >musica para baixar</a
+      >
+    </p>
+    
+    <h1>COLOCANDO VIDEOS EM SEU SITE</h1>
+    
+
+
+  </body>
+</html>

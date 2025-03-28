@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            display: flex;
+            justify-content: center;
+            border-collapse: collapse;
+        }
+
+        tr, td {
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        td {
+            width: 100px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .rosa{
+            background-color: pink;
+        }
+
+        .verde{
+            background-color: lightgreen;
+        }
+
+        .amarelo{
+            background-color: yellow;
+        }
+        .num{
+            text-align: left;
+        }
+
+    </style>
+        
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- Hierarquia de tabelas (simples)
+     TAG table = tabela
+        TABLE ROW =  linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+            TABLE DATA = dado de tabela
+            -->
+    <table>
+        <tr>
+            <td class="rosa"> A1</td>
+            <td> B1</td>
+            <td class="verde"> C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td class="amarelo">B2</td>
+            <!-- <td>C2</td> -->
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="amarelo">B3</td>
+            <!-- <td>C3</td> -->
+        </tr>
+        <tr>
+            <td class="verde">A4</td>
+            <td>B4</td>
+            <td class="rosa">C4</td>
+        </tr>
+    </table>
+</body>
+</html>

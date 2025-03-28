@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grouping Tags HTML</title>
+    </head>
+
+        <style>
+
+            body {
+                background-color: rgba(246, 188, 188, 0.764);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            header > h1 {
+                text-align: center;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: rgb(128, 128, 128);
+            }
+            header {
+                background-color: rgb(128, 128, 128);
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            nav {
+                display: flex;
+                justify-content:space-around;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: black;
+                border-radius: 5px;
+            }
+
+            nav > a{
+                padding: 20px;
+                text-decoration: none;
+                color: rgb(140, 139, 139);
+                margin: 10px;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: white;
+                transition: 0.9s;
+            }
+
+            footer > p {
+                background-color: rgb(0, 0, 0);
+                color: rgb(223, 222, 222);
+                text-align: center;
+                padding: 5px ;
+                border-radius: 20px;
+                margin: 0px;
+            }
+
+            .btn {
+                background-color: rgb(128, 128, 128);
+                color: white;
+                border-radius: 5px;
+                padding: 5px;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                margin: 10px;
+                
+
+            }
+            
+            main {
+                border: 10px solided rgb(211, 83, 83);
+                background-color: rgb(128, 128, 128);
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+        </style>
+
+
+    <body>
+        <header>
+            <h1>Meu site</h1>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Suporte</a>
+                <a href="#">Contato</a>
+                <a href="#">Clique</a>
+                <a href="#">Projetos</a>
+                <button class="btn" type="button">Aqui</button>
+            </nav>
+        </header>
+        <main>
+            <section >
+                <p>Esportes Politica Tecnologia</p>
+            </section>
+            <section >
+                <article>
+                    <h2>Noticia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur exercitationem deserunt, assumenda reprehenderit, hic ut quibusdam laboriosam fugiat error deleniti doloribus eaque voluptatum aliquam dolor maxime perspiciatis doloremque, non eos!</p>
+        </main>
+        <footer>
+            <p>Criado por mim mesmo</p>
+        </footer>
+    </body>
+    </html>

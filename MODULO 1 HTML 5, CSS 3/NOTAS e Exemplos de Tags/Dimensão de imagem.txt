@@ -1,0 +1,6 @@
+Podemos usar o GIMP ou PHOTOSHOP etc...
+
+Sempre manter as imagens full para futuros alterações
+tamanho ideal para site até 1200x800;
+roda pé 200px
+

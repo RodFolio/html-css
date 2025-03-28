@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trabalhando com links</title>
+  </head>
+  <body>
+    <h1>Usando links externos</h1>
+    <p>
+      Voce pode acessar o meu
+      <a
+        href="https://github.com/gustavoguanabara"
+        target="_blank"
+        rel="external"
+        >repositorio GitHub</a
+      >
+    </p>
+    <!--a tag "a" serve para ancora, e para abrir em uma nova aba usamos o parametro target="blank"; e tambem teo parametro rel="external"-->
+
+    <h2>USANDO LINKS INTERNOS</h2>
+    <p>
+      acessa a minha pagina aqui
+      <a href="pag002.html" rel="next">comendo bolo de boto</a>
+    </p>
+    <p>
+      voce pode acessar as noticias aqui
+      <a href="noticias/pague003.html">noticia 1</a>
+    </p>
+
+    <h1>Links para Downloads</h1>
+    <ul>
+      <li>
+        <a href="livro/boleto cest1.pdf" download="boleto">baixar um arquivo em pdf</a>
+        <!--usamos o parametro download para o arquivo ser baixado diretamente, ao inves de abrir em um outro navegador-->
+      </li>
+      <li><a href="livro/boleto cest1.zip">link compactado</a></li>
+    </ul>
+  </body>
+</html>
