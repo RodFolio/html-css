@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 100px;
+        }
+
+        th, td{
+            padding: 8px;
+            border: 1px solid #141414;
+        }
+
+        .nome{
+            background-color: #0095ff;
+        }
+
+        .idade{
+            background-color: #ff0095;
+        }
+
+        .sexo{
+            background-color: #95ff00;
+        }
+
+        .profissao{
+            background-color: #ff9500;
+        } 
+
+        .joao{
+            background-color: #ff0000;
+        }
+
+        .julia{
+            background-color: #00ff00;
+        }
+
+        .novo{
+            background-color: #b9b9c5;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela usando COLGROUP</h1>
+
+    <table>
+        <!-- tag nova para descatar uma coluna em uma tabela 
+         span='2' pega duas colunas -->
+        <colgroup>
+        <col class="nome">
+        <col class="idade">
+        <col class="sexo">
+        <col class="profissao">
+        </colgroup>
+
+
+        <caption>Cadastro</caption>
+        <thead>
+            <tr class="novo">
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Profissão</th>
+            </tr>
+
+            <tr class="joao">
+                <td>João</td>
+                <td>25</td>
+                <td>Masculino</td>
+                <td>Programador</td>
+            </tr>
+
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+                <td>Feminino</td>
+                <td>Analista</td>
+            </tr>
+
+            <tr>
+                <td>Carlos</td>
+                <td>35</td>
+                <td>Masculino</td>
+                <td>Gerente</td>
+            </tr>
+
+            <tr class="julia">
+                <td>Julia</td>
+                <td>40</td>
+                <td>Feminino</td>
+                <td>Coordenadora</td>
+            </tr>
+
+            <tr>
+                <td>Lucas</td>
+                <td>45</td>
+                <td>Masculino</td>
+                <td>CEO</td>
+            </tr>
+
+            <tr>
+                <td>Paula</td>
+                <td>50</td>
+                <td>Feminino</td>
+                <td>Analista</td>
+            </tr>
+        </thead>
+
+
+
+
+    </table>
+
+
+
+</body>
+</html>
