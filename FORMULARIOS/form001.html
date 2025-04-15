@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO 1</title>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <!-- autocomplete='off' desliga o auto preenchimento -->
+     <!-- label = etiqueta -->
+      <!-- name mais utilizado em PHP, e ID mais utilizado em Javascript -->
+       <!-- por padrao o metodo ja é o GET, e o POST faz como que nao pareça os dados na URL -->
+
+       <!-- GET suporta ate 3000 bits passou disso, tem que ser o POST -->
+
+       <!-- Futuro aprender mais de HTTPS para criptocrafia de dados sensiveis -->
+        <!-- POST para dados sensivel, porém não é mais seguro -->
+
+      <form method="post" autocomplete="off" action="cadastro.php">
+
+        <label for="nome">
+            <p>nome: <input type="text" name="nome" id="nome" placeholder="nome" required></p>
+        </label>
+
+        <label for="sobrenome">
+            <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome" required></p>
+        </label>
+
+        <input type="submit" value="Enviar">
+
+      </form>
+</body>
+</html>
