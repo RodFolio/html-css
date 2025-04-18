@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form003 teste</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 20px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    label{
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"]{
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover{
+        background-color: #0056b3;
+    }
+
+    .name{
+        margin-bottom: 20px;
+    }
+    .senha{
+        margin-bottom: 20px;
+    }
+    .butoes{
+        display: flex;
+        justify-content: space-between;
+    }
+    .butoes input[type="reset"]{
+        background-color: #dc3545;
+    }
+    .butoes input[type="reset"]:hover{
+        background-color: #c82333;
+    }
+    .butoes input[type="submit"]{
+        background-color: #28a745;
+    }
+    .butoes input[type="submit"]:hover{
+        background-color: #218838;
+    }
+
+
+</style>
+<body>
+    <h1>Teste de FORMULÁRIO</h1>
+    <form autocomplete="on" method="get" action="cadastro.php">
+    <div class="name">
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" placeholder="Seu melhor Nome" minlength="7" maxlength="13" autocomplete="name" required>
+    </div>
+
+    <div class="senha">
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua Senha" autocomplete="senha" required minlength="8" maxlength="16">
+        <!-- <input type="number" name="senha" id="senha" step="0.4"> -->
+    </div>
+
+    <div class="butoes">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+
+
+
+
+
+    </form>
+</body>
+</html>

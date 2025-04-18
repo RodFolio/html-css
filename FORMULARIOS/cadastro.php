@@ -1,1 +1,2 @@
-Arquivos enviados com sucesso
+Os dados foram enviados
+aprenda PHP para mais
