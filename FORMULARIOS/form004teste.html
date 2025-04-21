@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme004 teste</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    h1{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    fieldset{
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #cecece;
+    }
+    legend{
+        font-weight: bold;
+        font-size: 1.2em;
+        /* background-color: #d60a1e; */
+        /* margin-bottom: 10px; */
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    label{
+        font-weight: bold;
+    }
+    input[type="text"]{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    label {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    input::placeholder{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #999;
+    }
+
+    input[type="submit"],[type="reset"]{
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007BFF;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    input[type="submit"]:hover{
+        background-color: #0056b3;
+    }
+
+    input[type="reset"]:hover{
+        background-color: #ff243a;
+    }
+
+    input[type="reset"]{
+        background-color: #d60a1e;
+    }
+</style>
+<body>
+    <h1>Formulário Exemplo teste</h1>
+    <fieldset>
+        <legend>DADOS PESSOAIS</legend>
+        <form action="cadastro.php" autocomplete="on" method="post">
+            <div>
+                <label for="nome">NOME: </label>
+                <input type="text" name="name" id="nome" placeholder="Seu Nome" autocomplete="nome">
+            </div>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Apenas numero" maxlength="11" autocomplete="cpf" >
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

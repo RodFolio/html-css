@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form004</title>
+</head>
+<body>
+    <h1>FORMULÁRIO EXEMPLO</h1>
+    <!-- fildset agrupamento no formulario -->
+     <!-- legend = legendas no agrupamento fildset -->
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" placeholder="Seu melhor e-mail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone" autocomplete="telefone" placeholder="(xx)x xxxx-xxxx" required>
+            </p>
+            <!-- Estudar mais sobre RegEx (expressão regular) -->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
