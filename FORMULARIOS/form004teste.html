@@ -83,9 +83,113 @@
     input[type="reset"]{
         background-color: #d60a1e;
     }
+
+    /* select{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 1em;
+    }
+    select option{
+        padding: 10px;
+        font-size: 1em;
+    }
+    select:hover{
+        background-color: #f0f0f0;
+    } */
+    select {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    color: #333;
+  }
 </style>
 <body>
     <h1>Formulário Exemplo teste</h1>
+        <!-- <label for="frutas">Escolha uma fruta:</label>
+        <select id="frutas" name="fruta">
+          <option value="maca">Maçã</option>
+          <option value="banana">Banana</option>
+          <option value="laranja">Laranja</option>
+          <option value="uva">Uva</option>
+        </select> -->
+
+        <!-- <label for="bebidas">Escolha uma bebida:</label>
+<select id="bebidas" name="bebida">
+  <option value="agua">Água</option>
+  <option value="refrigerante">Refrigerante</option>
+  <option value="suco" disabled>Suco (Indisponível)</option>
+</select> -->
+
+<!-- <label for="linguagens">Selecione suas linguagens favoritas:</label>
+<select id="linguagens" name="linguagens" multiple>
+  <option value="python">Python</option>
+  <option value="javascript">JavaScript</option>
+  <option value="java">Java</option>
+  <option value="csharp">C#</option>
+</select> -->
+
+<!-- <label for="carros">Escolha um carro:</label>
+<select id="carros" name="carro">
+  <optgroup label="Populares">
+    <option value="gol">Gol</option>
+    <option value="palio">Palio</option>
+  </optgroup>
+  <optgroup label="Luxo">
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes</option>
+  </optgroup>
+</select> -->
+
+<!-- <label for="humor">Como você está se sentindo hoje?</label>
+<select id="humor" name="humor">
+  <option value="feliz">😄 Feliz</option>
+  <option value="triste">😢 Triste</option>
+  <option value="brava">😠 Brava</option>
+  <option value="neutra">😐 Neutra</option>
+</select> -->
+
+<!-- <label for="tema">Mude o tema:</label>
+<select id="tema" onchange="document.body.style.backgroundColor = this.value">
+  <option value="white">Claro</option>
+  <option value="black">Escuro</option>
+  <option value="lightblue">Azulado</option>
+</select> -->
+
+<!-- <form action="/processar" method="post">
+    <label for="curso">Escolha seu curso:</label>
+    <select id="curso" name="curso">
+      <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+      <option value="enfermagem">Enfermagem</option>
+      <option value="direito">Direito</option>
+      <option value="psicologia">Psicologia</option>
+    </select>
+    <button type="submit">Enviar</button>
+  </form> -->
+
+  <!-- <label for="genero">Gênero:</label>
+<select id="genero" name="genero">
+  <option value="" hidden>Selecione...</option>
+  <option value="feminino">Feminino</option>
+  <option value="masculino">Masculino</option>
+  <option value="outro">Outro</option>
+  <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+</select> -->
+
+<label for="idioma">Idioma:</label>
+<select id="idioma">
+  <option value="pt">Português</option>
+  <option value="en">Inglês</option>
+  <option value="es">Espanhol</option>
+</select>
+
+  
+
+
+      
     <fieldset>
         <legend>DADOS PESSOAIS</legend>
         <form action="cadastro.php" autocomplete="on" method="post">

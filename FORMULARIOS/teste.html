@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Estilizado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .custom-select-wrapper {
+      position: relative;
+      width: 250px;
+    }
+
+    .custom-select {
+      background-color: white;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      padding: 12px 16px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 16px;
+      transition: border-color 0.2s;
+    }
+
+    .custom-select:hover {
+      border-color: #888;
+    }
+
+    .options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      border: 2px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      z-index: 10;
+    }
+
+    .options.open {
+      max-height: 200px;
+    }
+
+    .option {
+      padding: 12px 16px;
+      cursor: pointer;
+    }
+
+    .option:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="custom-select-wrapper">
+    <div class="custom-select" onclick="toggleOptions()">Escolha uma linguagem</div>
+    <div class="options" id="dropdownOptions">
+      <div class="option" onclick="selectOption('Python')">🐍 Python</div>
+      <div class="option" onclick="selectOption('JavaScript')">✨ JavaScript</div>
+      <div class="option" onclick="selectOption('Java')">☕ Java</div>
+      <div class="option" onclick="selectOption('C#')">🔷 C#</div>
+    </div>
+  </div>
+
+  <script>
+    const selectBox = document.querySelector('.custom-select');
+    const dropdown = document.getElementById('dropdownOptions');
+
+    function toggleOptions() {
+      dropdown.classList.toggle('open');
+    }
+
+    function selectOption(value) {
+      selectBox.innerText = value;
+      dropdown.classList.remove('open');
+      console.log("Selecionado:", value); // Aqui você pode usar o valor como quiser
+    }
+
+    // Fechar ao clicar fora
+    document.addEventListener('click', function(event) {
+      if (!event.target.closest('.custom-select-wrapper')) {
+        dropdown.classList.remove('open');
+      }
+    });
+  </script>
+
+</body>
+</html>
