@@ -1,2 +1,8 @@
 @charset "UTF-8";
 /* Estilos para o layout em paisagem */
+
+body{
+    background: url(../../imagens/cev-landscape.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: right bottom;
+}

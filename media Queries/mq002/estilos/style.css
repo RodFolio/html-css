@@ -1,3 +1,21 @@
 @charset "UTF-8";
-/* Estilos generais */
+/* Estilos gerais */
 
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+html,body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    
+}
+
+h1{
+    color: white;
+    text-shadow: 3px 3px 0px #081895;
+    padding: 10px;
+}

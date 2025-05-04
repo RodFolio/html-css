@@ -1,2 +1,8 @@
 @charset "UTF-8";
 /* layout em pé */
+
+body {
+    background: url(../../imagens/cev-portrait.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: left bottom;
+}
